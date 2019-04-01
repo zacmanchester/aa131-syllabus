@@ -5,11 +5,13 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{color}
+\usepackage{multirow}
+\usepackage{multicol}
 
 \newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
 
 \title{AA131: Space Flight}
-\author{Spring 2018}
+\author{Spring 2019}
 \date{}
 
 \begin{document}
@@ -33,16 +35,18 @@ Exploring space --- the prospect of traveling beyond the confines of Earth --- i
 \begin{center}
 \begin{tabular}{l c r}
 	Prof. Zac Manchester & \textbf{Email:} \href{mailto:zacmanchester@stanford.edu}{zacmanchester@stanford.edu} & \textbf{Office:} Durand 267 \\
-	TA: \todo{TBD}
+	TA: William Brannon & \textbf{Email:} \href{mailto:wbrannon@stanford.edu}{wbrannon@stanford.edu}
+	\\
+	TA: Andrew Rapsomanikis & \textbf{Email:} \href{mailto:araps@stanford.edu}{araps@stanford.edu}
 \end{tabular}
 \end{center}
 
 \section*{Logistics}
 
 \begin{itemize}
-	\item Lectures will be held \todo{TBD} in \todo{TBD}.
+	\item Lectures will be held Tuesdays and Thursdays 3:00 -- 4:20 PM in Mitchell B67.
 	\item Office hours will be held \todo{TBD}.
-	\item Homework assignments will be due by \todo{TBD}.
+	\item Homework assignments will be due by 11:59 PM on Thursdays.
 	\item Canvas will be used to distribute course materials and collect assignments.
 	\item Slack will be used for general discussion and Q\&A outside of class and office hours.
 \end{itemize}
@@ -64,7 +68,7 @@ By the end of this course, students should be able to do the following:
 
 Homework will be assigned each week. Each assignment will include individual problems related to the material discussed in class, as well as mission-design questions related to the group project. Collaboration is required for the group project questions, and is encouraged on the individual questions as well. However, each student must hand in their own work.
 
-Homework will be due every week on \todo{TBD}. Solutions and feedback on the group project questions will be provided approximately one week after the due date. At the end of the quarter, the weekly assignments will be compiled into a final report by each group. There will be a midterm exam, a final exam, and a short presentation by each group on their mission-design project.
+Homework will be due every week on Thursdays. Solutions and feedback on the group project questions will be provided approximately one week after the due date. At the end of the quarter, the weekly assignments will be compiled into a final report by each group. There will be a midterm exam, a final exam, and a short presentation by each group on their mission-design project.
 
 \section*{Project Guidelines}
 
@@ -124,22 +128,72 @@ Students are responsible for understanding the University's Honor Code policy an
 \textbf{Accommodations:} Students who may need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE). Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty dated in the current quarter in which the request is being made. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations.
 
 
-\section*{Schedule of Topics}
+\section*{Tentative Schedule}
 
-\begin{enumerate}[label=\textbf{Week \arabic*:},leftmargin=3.5\parindent]
-	\item Course overview: Why we go to space
-	\item Orbit mechanics
-	\item Orbital maneuvers
-	\item Attitude dynamics
-	\item Attitude control
-	\item Structure and Thermal Systems
-	\item Power and Propulsion Systems
-	\item Telemetry and Command
-	\item The space environment, integration and testing
-	\item Spacecraft operations
-\end{enumerate}
+\begin{tabular}{c|c|c|c|c|c}
+	Week & Dates & Topics & Reading & HW Out & HW Due \\
+	\hline
+	\multirow{2}{*}{1} & Apr 2 & Course Overview, Spacecraft Subsystems & 14.1--14.4 & 1 & \\
+	 & Apr 4 & The Two Body Problem & & & \\
+	\hline
+	\multirow{2}{*}{2} & Apr 9 & Orbital Elements & 9.1--9.3 & 2 & 1 \\
+	 & Apr 11 & Perturbations & 9.4--9.5 & & \\
+	\hline
+	\multirow{2}{*}{3}  & \todo{Apr 16} & Propulsive Maneuvers & 9.6--9.7 & 3 & 2\\
+	 & Apr 18 & Patched Conics & & & \\
+	\hline
+	\multirow{2}{*}{4}  & Apr 23 & Propulsion Subsystem & 18.1--18.7 & 4 & 3\\
+	 & Apr 25 & Midterm Review \& Attitude Intro & & & \\
+	\hline
+	\multirow{2}{*}{5}  & Apr 30 & Attitude Dynamics & & & Midterm\\
+	 & May 2 & Attitude Stabilization \& Control & & & \\
+	\hline
+	\multirow{2}{*}{6}  & \todo{May 7} & ADCS Subsystem & 19.1 & 5 & 4\\
+	 & \todo{May 9} & Communication & & & \\
+	\hline
+	\multirow{2}{*}{7}  & May 14 & TT\&C Subsystem & 21.1 & 6 & 5\\
+	 & May 16 & Power Subsystem & 21.2 & & \\
+	\hline
+	\multirow{2}{*}{8}  & May 21 & Structure, Loads, Vibration & 22.1 & 7 & 6\\
+	 & May 23 & Thermal Subsystem & 22.2 & & \\
+	\hline
+	\multirow{2}{*}{9}  & May 28 & The Space Environment & 7.1--7.5 & 8 & 7\\
+	 & May 30 & Integration and Test & 23.3--23.4 & & \\
+	\hline
+	10 & Jun 4 & Final Review \& Project Help Session & & & 8\\
+\end{tabular}
 
+\section*{Possible Projects}
 
+\textbf{Enceladus Plumes:} The Cassini mission discovered that Saturn's moon Enceladus has geysers of liquid water spraying from its south pole. Design a combination of launch vehicle and spacecraft to analyze the water in the plumes of Enceladus for signs of life.
+
+\medskip
+\noindent
+\textbf{Venus Atmosphere:} Venus is our closest planetary neighbor, yet there is still much we do not know about its atmosphere. Design a low-cost mission to provide scientists with wind velocity, pressure, and temperature data of the middle atmosphere (10-50 km above the surface) at a high spatial resolution.
+
+\medskip
+\noindent
+\textbf{Lunar GPS:} Design a constellation of spacecraft to provide positioning and timing information to receivers on or near the surface of the moon. Consider how they might be launched and how they may or may not interact with existing GNSS constellations.
+
+\medskip
+\noindent
+\textbf{Satellite Servicing:} Design a satellite that can repair either low-Earth orbit or Geostationary satellites. Make sure your design is more cost effective than launching a new satellite.
+
+\medskip
+\noindent
+\textbf{Wildlife Tracking:} Tracking animal migrations across the globe is a huge challenge for ecologists. Design a small satellite constellation to track the positions of very small low-power radio tags placed on animals such as birds and marine mammals. Consider the cost of deploying the constellation as well as the frequency of position updates.
+
+\medskip
+\noindent
+\textbf{Earth Video:} A startup called EarthNow recently proposed deploying a satellite constellation that could provide continuous video coverage of the entire Earth. Work through the design of such a constellation. While the cost of this system is not highly constrained, communication bandwidth will likely be a limiting factor.
+
+\medskip
+\noindent
+\textbf{Laser Sails:} The Breakthrough Starshot project has proposed accelerating gram-scale satellites to 20\% the speed of light using a 100 GW ground-based laser. If such a laser could be built, it could presumably also be used to send much larger spacecraft to destinations within the solar system. Design a spacecraft to cary cargo to Mars using the proposed Starshot laser system.
+
+\medskip
+\noindent
+\textbf{Ballistic Launch:} Launching satellites without rockets has been a dream of engineers for decades. Recently, a concept known as Quiklaunch has been proposed that uses a light gas gun to launch satellites into low-Earth orbit. Design an Earth observation satellite that can be launched by such a system.
 
 
 \end{document}
